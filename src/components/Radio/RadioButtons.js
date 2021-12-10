@@ -1,5 +1,6 @@
 import React from "react";
 // import { ReactDOM } from "react-dom";
+
 class RadioButtons extends React.Component {
   constructor() {
     super();
@@ -20,18 +21,22 @@ class RadioButtons extends React.Component {
       <div>
         <input
           type="radio"
+          className="myinput"
           value="Yes"
+          style={{ width: "2em", height: "2em" }}
           checked={this.state.selectedOption === "Yes"}
           onChange={this.radioChange}
         />
-        Yes
+        Own House
         <input
           type="radio"
+          className="myinput"
           value="No"
+          style={{ width: "2em", height: "2em" }}
           checked={this.state.selectedOption === "No"}
           onChange={this.radioChange}
         />
-        No
+        Rental House
         {/* <h3>this.state.selectedOption: {this.state.selectedOption}</h3> */}
       </div>
     );

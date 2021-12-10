@@ -560,3 +560,27 @@ header.MuiPaper-root {
 .makeStyles-container-4 {
   padding-left: 0px !important;
 }
+.input[type="checkbox"]:before {
+  position: relative !important;
+  display: block !important;
+  width: 11px !important;
+  height: 11px !important;
+  border: 1px solid #808080 !important;
+  content: "";
+  background: #fff !important;
+}
+.myinput[type="checkbox"]:after {
+  position: relative;
+  display: block;
+  left: 2px;
+  top: -11px;
+  width: 7px;
+  height: 7px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b3b3b3 #dcddde #dcddde #b3b3b3;
+  content: "";
+  background-image: linear-gradient(135deg, #b1b6be 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
