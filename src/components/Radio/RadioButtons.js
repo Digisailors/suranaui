@@ -32,7 +32,7 @@ class RadioButtons extends React.Component {
           onChange={this.radioChange}
         />
         No
-        <h3>this.state.selectedOption: {this.state.selectedOption}</h3>
+        {/* <h3>this.state.selectedOption: {this.state.selectedOption}</h3> */}
       </div>
     );
   }
