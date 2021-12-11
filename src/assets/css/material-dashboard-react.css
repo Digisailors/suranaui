@@ -584,3 +584,16 @@ header.MuiPaper-root {
   background-repeat: no-repeat;
   background-position: center;
 }
+.makeStyles-grid-109 {
+  margin-top: 30px !important;
+}
+.ct-series-a .ct-point,
+.ct-series-a .ct-line {
+  stroke: #02063a !important;
+}
+.ct-label.ct-horizontal.ct-end {
+  color: #02063a !important;
+}
+#profile-menu-list-grow {
+  background-color: #f0f0f0 !important;
+}
