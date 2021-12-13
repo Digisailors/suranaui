@@ -597,3 +597,45 @@ header.MuiPaper-root {
 #profile-menu-list-grow {
   background-color: #f0f0f0 !important;
 }
+.filelabel {
+  width: 120px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+}
+.filelabel i {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 5px;
+  margin-right: 60px;
+}
+.filelabel i,
+.filelabel .title {
+  color: grey;
+  transition: 200ms color;
+}
+.filelabel:hover {
+  border: 2px solid #1665c4;
+}
+.filelabel:hover i,
+.filelabel:hover .title {
+  color: #1665c4;
+}
+#FileInput {
+  display: none;
+}
+/* .btncenter {
+  margin: 30px !important;
+  margin-right: 60px !important;
+  text-align: 80px !important;
+  align-items: center !important;
+  top: 20px !important;
+  left: 20px !important;
+  justify-content: center !important;
+  /* -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }*/

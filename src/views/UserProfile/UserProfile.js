@@ -11,9 +11,9 @@ import Card from "components/Card/Card.js";
 // import CardHeader from "components/Card/CardHeader.js";
 // import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
-import CardIcon from "components/Card/CardIcon.js";
-import Store from "@material-ui/icons/Store";
 import RadioButtons from "components/Radio/RadioButtons.js";
+
+// import ImageUpload from "components/ImageUpload";
 
 // import CardFooter from "components/Card/CardFooter.js";
 
@@ -1256,20 +1256,29 @@ export default function UserProfile() {
 
       {/* Grid Container 3 */}
       <GridContainer>
-        <GridItem xs={12} sm={12} md={12}>
-          <Card>
-            <CardBody>
-              <GridContainer>
-                <CardBody color="success" stats Add icon>
-                  <CardIcon color="success">
-                    <Store />
-                  </CardIcon>
-                </CardBody>
-                <input type="file" />
-              </GridContainer>
-            </CardBody>
-          </Card>
-        </GridItem>
+        <Card>
+          <CardBody>
+            <GridItem xs={12} sm={12} md={12}>
+              <div>
+                <label className="filelabel">
+                  <i className="fa fa-plus"></i>
+                  <span className="title">Add File</span>
+                  <input
+                    className="FileUpload1"
+                    id="FileInput"
+                    name="booking_attachment"
+                    type="file"
+                  />
+                </label>
+              </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+              <div>
+                <Button color="#02063a">Save and Next</Button>
+              </div>
+            </GridItem>
+          </CardBody>
+        </Card>
       </GridContainer>
     </div>
   );
